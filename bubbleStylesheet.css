@@ -1,41 +1,21 @@
-﻿/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+﻿
+/* Bubble style options. */
 
-/* Page styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #006994; /* Ocean-like background */
-    overflow: hidden; /* Prevent horizontal scrolling */
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; /* Position the bubble at the bottom */
-}
-
-/* Ocean container */
-.oceanContainer {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-/* Bubble style options*/
 .bubble1, .bubble2, .bubble3 {
     position: absolute;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
     opacity: 0;
+    z-index: 2;
+    pointer-events: none; /* Ensures bubbles don't block interaction with other elements */
 }
 
-/* Bubble animation option 1*/
+/* Bubble animation option 1. */
+
 @keyframes floatUpBubble1 {
     0% {
-        transform: translateY(0) translateX(var(--startX)); /* Use the custom property for dynamic X */
+        transform: translateY(0) translateX(var(--startX));
         opacity: 0.6;
     }
 
@@ -90,9 +70,10 @@ body {
 }
 
 /* Bubble animation option 2*/
+
 @keyframes floatUpBubble2 {
     0% {
-        transform: translateY(0) translateX(var(--startX)); /* Use the custom property for dynamic X */
+        transform: translateY(0) translateX(var(--startX));
         opacity: 0.8;
     }
 
@@ -145,9 +126,10 @@ body {
 }
 
 /* Bubble animation option 3. */
+
 @keyframes floatUpBubble3 {
     0% {
-        transform: translateY(0) translateX(var(--startX)); /* Use the custom property for dynamic X */
+        transform: translateY(0) translateX(var(--startX));
         opacity: 0.8;
     }
 
@@ -198,6 +180,7 @@ body {
 }
 
 /* Set different starting X positions using nth-child. */
+
 .oceanContainer .bubble1:nth-child(1) {
     --startX: 20vw;
     width: 20px;
@@ -234,7 +217,7 @@ body {
 }
 
 .oceanContainer .bubble3:nth-child(6) {
-    --startX: 10vw;
+    --startX: 8vw;
     width: 10px;
     height: 10px;
     animation: floatUpBubble3 12s linear infinite 2s;
@@ -274,8 +257,3 @@ body {
     height: 24px;
     animation: floatUpBubble2 14s linear infinite 12s;
 }
-
-
-
-
-
