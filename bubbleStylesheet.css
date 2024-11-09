@@ -23,37 +23,16 @@ body {
     position: relative;
 }
 
-/* Bubble styling options*/
-.bubble1 {
+/* Bubble style options*/
+.bubble1, .bubble2, .bubble3 {
     position: absolute;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
     opacity: 0;
-    animation: floatUpBubble1 16s linear infinite;
 }
-
-.bubble2 {
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    opacity: 0;
-    animation: floatUpBubble2 14s linear infinite;
-}
-
-.bubble3 {
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    opacity: 0;
-    animation: floatUpBubble3 12s linear infinite;
-}
-
 
 /* Bubble animation option 1*/
-
 @keyframes floatUpBubble1 {
     0% {
         transform: translateY(0) translateX(var(--startX)); /* Use the custom property for dynamic X */
@@ -165,6 +144,7 @@ body {
     }
 }
 
+/* Bubble animation option 3. */
 @keyframes floatUpBubble3 {
     0% {
         transform: translateY(0) translateX(var(--startX)); /* Use the custom property for dynamic X */
@@ -216,52 +196,86 @@ body {
         height: 12px;
     }
 }
-/* Set different starting X positions using nth-child */
+
+/* Set different starting X positions using nth-child. */
 .oceanContainer .bubble1:nth-child(1) {
-    --startX: 300px;
-    animation-delay: 0s;
+    --startX: 20vw;
     width: 20px;
     height: 20px;
+    animation: floatUpBubble1 16s linear infinite 0s;
 }
 
 .oceanContainer .bubble1:nth-child(2) {
-    --startX: 600px;
-    animation-delay: 3s;
+    --startX: 40vw;
     width: 18px;
     height: 18px;
+    animation: floatUpBubble1 16s linear infinite 3s;
 }
 
 .oceanContainer .bubble2:nth-child(3) {
-    --startX: 500px;
-    animation-delay: 9s;
+    --startX: 60vw;
     width: 22px;
     height: 22px;
+    animation: floatUpBubble2 14s linear infinite 9s;
 }
 
 .oceanContainer .bubble1:nth-child(4) {
-    --startX: 900px;
-    animation-delay: 7s;
+    --startX: 80vw;
     width: 14px;
     height: 14px;
+    animation: floatUpBubble1 16s linear infinite 7s;
 }
 
 .oceanContainer .bubble2:nth-child(5) {
-    --startX: 1200px;
-    animation-delay: 5s;
+    --startX: 90vw;
     width: 22px;
     height: 22px;
+    animation: floatUpBubble2 14s linear infinite 5s;
 }
 
 .oceanContainer .bubble3:nth-child(6) {
-    --startX: 100px;
-    animation-delay: 2s;
+    --startX: 10vw;
     width: 10px;
     height: 10px;
+    animation: floatUpBubble3 12s linear infinite 2s;
 }
 
 .oceanContainer .bubble3:nth-child(7) {
-    --startX: 1600px;
-    animation-delay: 6s;
+    --startX: 95vw;
     width: 14px;
     height: 14px;
+    animation: floatUpBubble3 12s linear infinite 8s;
 }
+
+.oceanContainer .bubble2:nth-child(8) {
+    --startX: 30vw;
+    width: 18px;
+    height: 18px;
+    animation: floatUpBubble2 14s linear infinite 6s;
+}
+
+.oceanContainer .bubble1:nth-child(9) {
+    --startX: 14vw;
+    width: 16px;
+    height: 16px;
+    animation: floatUpBubble1 16s linear infinite 10s;
+}
+
+.oceanContainer .bubble3:nth-child(10) {
+    --startX: 50vw;
+    width: 10px;
+    height: 10px;
+    animation: floatUpBubble3 12s linear infinite 11s;
+}
+
+.oceanContainer .bubble2:nth-child(11) {
+    --startX: 70vw;
+    width: 24px;
+    height: 24px;
+    animation: floatUpBubble2 14s linear infinite 12s;
+}
+
+
+
+
+
