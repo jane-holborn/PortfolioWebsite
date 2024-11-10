@@ -20,31 +20,37 @@ body {
 
 nav {
     display: none;
-    height: 110px;
+    height: 120px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    opacity: 0.7;
 }
 
 nav.active {
     display: flex;
+    justify-content: flex-start;
+    padding-left: 140px;
 }
 
 ul {
-    gap: 60px;
+    gap: 80px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    text-align: left;
     list-style-type: none;
     font-size: 2rem;
 }
 
-a {
+nav a {
     color: #032863;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    transition: 0.3s;
 }
 
 .hamburgerIcon {
@@ -52,10 +58,10 @@ a {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    top: 2.4rem;
-    left: 2.4rem;
-    width: 38px;
-    height: 26px;
+    top: 2.8rem;
+    left: 3rem;
+    width: 42px;
+    height: 30px;
     cursor: pointer;
     transition: transform 0.3s ease;
     z-index: 2000;
@@ -70,7 +76,8 @@ a {
 }
 
 .hamburgerIcon.active .bar:nth-child(1) {
-    transform: rotate(45deg) translateY(15.5px); /* Rotate and move up */
+    transform: rotate(45deg) translateY(18.3px); /* Rotate and move up */
+    background-color: #032863;
 }
 
 .hamburgerIcon.active .bar:nth-child(2) {
@@ -78,7 +85,8 @@ a {
 }
 
 .hamburgerIcon.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translateY(-15.5px); /* Rotate and move down */
+    transform: rotate(-45deg) translateY(-18.3px); /* Rotate and move down */
+    background-color: #032863;
 }
 
 /* Ocean container. */
