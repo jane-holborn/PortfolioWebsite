@@ -1,4 +1,6 @@
-﻿.fish {
+﻿
+
+.fish {
     position: absolute; /* Position the fish relative to the viewport */
     left: 100%; /* Start off-screen to the right */
     top: 70%; /* Vertically center the fish */

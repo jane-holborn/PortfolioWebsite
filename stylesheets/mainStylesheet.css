@@ -1,0 +1,119 @@
+﻿
+/* Basic Reset. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.3rem;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #71aefb 0%, #468ff6 25%, #053a8f 75%, #032863 100%);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+nav {
+    display: none;
+    height: 110px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0.7;
+}
+
+nav.active {
+    display: flex;
+}
+
+ul {
+    gap: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+a {
+    color: #032863;
+    text-decoration: none;
+}
+
+.hamburgerIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 2.4rem;
+    left: 2.4rem;
+    width: 38px;
+    height: 26px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 2000;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #032863;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburgerIcon.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(15.5px); /* Rotate and move up */
+}
+
+.hamburgerIcon.active .bar:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+}
+
+.hamburgerIcon.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-15.5px); /* Rotate and move down */
+}
+
+/* Ocean container. */
+
+.oceanContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Content Container (Text and Icon under the bubbles) */
+.contentContainer {
+    position: relative;
+    bottom: 0;
+    margin-top: 35vh;
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+}
+
+/* Header Style */
+.contentContainer h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraph Style */
+.paragraphStyle {
+    margin-bottom: 1rem;
+}
+
+/* Icon Styling */
+.icons {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
