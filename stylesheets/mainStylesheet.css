@@ -33,6 +33,15 @@ nav.active {
     padding-left: 140px;
 }
 
+nav a {
+    color: #032863;
+}
+
+nav a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
 ul {
     gap: 60px;
     display: flex;
@@ -48,15 +57,6 @@ a {
     border: none;
     outline: none;
     text-decoration: none;
-}
-
-nav a {
-    color: #032863;
-}
-
-nav a:hover {
-    color: white;
-    transition: 0.3s;
 }
 
 .hamburgerIcon {
@@ -112,11 +112,11 @@ nav a:hover {
     color: white;
 }
 
-/* Header Style */
-.contentContainer h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
+    /* Header Style */
+    .contentContainer h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
 
 /* Paragraph Style */
 .paragraphStyle {
@@ -134,7 +134,7 @@ nav a:hover {
 /* Work in progress warning */
 #workInProgressWarning {
     font-size: 14px;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 @media (max-width: 767px) {
@@ -152,13 +152,13 @@ nav a:hover {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        position: sticky;
+        position: relative;
     }
 
     nav.active {
         display: flex;
         justify-content: flex-start;
-        padding-left: 80px;
+        padding-left: 70px;
     }
 
     ul {
@@ -186,17 +186,17 @@ nav a:hover {
         z-index: 2000;
     }
 
-    .hamburgerIcon.active .bar:nth-child(1) {
-        transform: rotate(45deg) translateY(16.8px); /* Rotate and move up */
-        background-color: #032863;
-    }
+        .hamburgerIcon.active .bar:nth-child(1) {
+            transform: rotate(45deg) translateY(16.8px); /* Rotate and move up */
+            background-color: #032863;
+        }
 
-    .hamburgerIcon.active .bar:nth-child(2) {
-        opacity: 0; /* Hide the middle bar */
-    }
+        .hamburgerIcon.active .bar:nth-child(2) {
+            opacity: 0; /* Hide the middle bar */
+        }
 
-    .hamburgerIcon.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translateY(-16.8px); /* Rotate and move down */
-        background-color: #032863;
-    }
+        .hamburgerIcon.active .bar:nth-child(3) {
+            transform: rotate(-45deg) translateY(-16.8px); /* Rotate and move down */
+            background-color: #032863;
+        }
 }
