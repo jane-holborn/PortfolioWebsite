@@ -24,7 +24,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: sticky;
 }
 
 nav.active {
@@ -152,7 +152,7 @@ nav a:hover {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        position: sticky;
     }
 
     nav.active {
