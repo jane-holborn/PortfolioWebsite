@@ -7,24 +7,32 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+}
+
 body {
     font-size: 1.3rem;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #71AEFB 0%, #468ff6 25%, #053a8f 75%, #032863 100%);
+    background-attachment: fixed;
     overflow-x: hidden;
     overflow-y: auto;
-    height: 100vh;
     display: flex;
     justify-content: center;
 }
 
 nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
     display: flex;
     height: 120px;
     align-items: center;
     padding-left: 100px;
-    position: sticky;
-    z-index: 3;
+    z-index: 100;
 }
 
 nav ul {
@@ -38,7 +46,7 @@ nav ul.active {
     text-align: left;
     list-style-type: none;
     font-size: 1.6rem;
-    z-index: 3;
+    z-index: 10;
 }
 
 nav a {
@@ -65,7 +73,7 @@ nav a:hover {
     height: 30px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    z-index: 10;
+    z-index: 100;
 }
 
 .bar {
@@ -74,6 +82,7 @@ nav a:hover {
     background-color: #032863;
     border-radius: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 100;
 }
 
 .hamburgerIcon.active .bar:nth-child(1) {
@@ -97,32 +106,35 @@ a {
     text-decoration: none;
 }
 
-/* Ocean container. */
-
-.oceanContainer {
-    width: 100%;
+section {
     height: 100vh;
-    position: absolute;
-}
-
-/* Content Container (Text and Icon under the bubbles) */
-.contentContainer {
-    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    margin-top: 35vh;
     text-align: center;
     color: white;
 }
 
+/* Ocean container. */
+.oceanContainer {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+}
+
 /* Header Style */
-.contentContainer h1 {
+section h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
 }
 
-/* Paragraph Style */
-.contentContainer p {
-    margin-bottom: 20px;
+/* Section paragraph Style */
+section p {
+    margin: 20px;
 }
 
 /* Icon Styling */
@@ -139,8 +151,66 @@ a {
     margin-top: 20px;
     padding: 10px;
 }
-
+/* For devices with a max-width of 767px (typically mobile or small tablets) */
 @media (max-width: 767px) {
+    /* Mobile-specific styles go here */
+
+    nav {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        height: 92px;
+        align-items: center;
+        padding-left: 70px;
+        z-index: 100;
+    }
+
+    nav ul.active {
+        gap: 6px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        list-style-type: none;
+        font-size: 1.3rem;
+        z-index: 10;
+    }
+
+    .hamburgerIcon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 34px;
+        height: 28px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        z-index: 10;
+    }
+
+    .hamburgerIcon.active .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(17px); /* Rotate and move up */
+        background-color: #032863;
+    }
+
+    .hamburgerIcon.active .bar:nth-child(2) {
+        opacity: 0;/* Hide the middle bar */
+    }
+
+    .hamburgerIcon.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-17px);/* Rotate and move down */
+        background-color: #032863;
+    }
+
+    br {
+        display: none;
+    }
+}
+
+/*@media (max-width: 767px) {
     .contentContainer {
         bottom: 0;
         position: relative;
@@ -155,7 +225,7 @@ a {
         align-items: center;
         padding-left: 70px;
         position: sticky;
-        z-index: 3;
+        z-index: 10;
     }
     
     nav ul {
@@ -168,7 +238,7 @@ a {
         text-align: left;
         list-style-type: none;
         font-size: 1.3rem;
-        z-index: 3;
+        z-index: 10;
     }
 
     nav a {
@@ -199,16 +269,16 @@ a {
     }
 
     .hamburgerIcon.active .bar:nth-child(1) {
-        transform: rotate(45deg) translateY(16.8px);  Rotate and move up 
-        background-color: #032863;
+        transform: rotate(45deg) translateY(18.3px);*/ /* Rotate and move up */
+        /*background-color: #032863;
     }
 
     .hamburgerIcon.active .bar:nth-child(2) {
-        opacity: 0;  Hide the middle bar 
-    }
+        opacity: 0;*/ /* Hide the middle bar */
+    /*}
 
     .hamburgerIcon.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translateY(-16.8px);  Rotate and move down 
-        background-color: #032863;
+        transform: rotate(-45deg) translateY(-18.3px);*/ /* Rotate and move down */
+        /*background-color: #032863;
     }
-}
+}*/
