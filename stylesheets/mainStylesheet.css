@@ -124,7 +124,7 @@ section {
     height: 100vh;
     position: fixed;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 /* Header Style */
@@ -205,7 +205,6 @@ section p {
         z-index: 100;
     }
 
-
     .hamburgerIcon.active .bar:nth-child(1) {
         transform: rotate(45deg) translateY(17px);
         background-color: #032863;
@@ -222,5 +221,30 @@ section p {
 
     br {
         display: none;
+    }
+
+    nav.scrolled-portfolio .hamburgerIcon .bar {
+        background-color: white;
+    }
+
+    nav.scrolled-portfolio .hamburgerIcon .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(17px);
+        background-color: white;
+    }
+
+    nav.scrolled-portfolio .hamburgerIcon .bar:nth-child(2) {
+        opacity: 0; 
+    }
+
+    nav.scrolled-portfolio .hamburgerIcon .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-17px);
+        background-color: white;
+    }
+    nav.scrolled-portfolio a {
+        color: white;
+    }
+
+    nav.scrolled-portfolio a:hover {
+        color: #468ff6;
     }
 }
