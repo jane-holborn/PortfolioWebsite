@@ -11,50 +11,47 @@ body {
     font-size: 1.3rem;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #71AEFB 0%, #468ff6 25%, #053a8f 75%, #032863 100%);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
 }
 
 nav {
-    display: none;
+    display: flex;
     height: 120px;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    padding-left: 100px;
     position: sticky;
     z-index: 3;
 }
 
-nav.active {
+nav ul {
+    display: none;
+}
+
+nav ul.active {
+    gap: 20px;
     display: flex;
-    justify-content: flex-start;
-    padding-left: 140px;
+    align-items: center;
+    text-align: left;
+    list-style-type: none;
+    font-size: 1.6rem;
+    z-index: 3;
 }
 
 nav a {
     color: #032863;
     border: none;
     outline: none;
+    padding: 10px;
     text-decoration: none;
 }
 
 nav a:hover {
     color: white;
     transition: 0.3s;
-}
-
-ul {
-    gap: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: left;
-    list-style-type: none;
-    font-size: 1.6rem;
 }
 
 .hamburgerIcon {
@@ -68,7 +65,7 @@ ul {
     height: 30px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    z-index: 2000;
+    z-index: 10;
 }
 
 .bar {
@@ -93,18 +90,25 @@ ul {
     background-color: #032863;
 }
 
+a {
+    color: #032863;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
 /* Ocean container. */
 
 .oceanContainer {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
 }
 
 /* Content Container (Text and Icon under the bubbles) */
 .contentContainer {
-    position: relative;
     bottom: 0;
+    position: relative;
     margin-top: 35vh;
     text-align: center;
     color: white;
@@ -117,58 +121,67 @@ ul {
 }
 
 /* Paragraph Style */
-.paragraphStyle {
-    margin-bottom: 1rem;
+.contentContainer p {
+    margin-bottom: 20px;
 }
 
 /* Icon Styling */
-.icons {
+.contentContainer svg {
     width: 40px;
     height: 40px;
-    margin: 20px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     cursor: pointer;
 }
 
-/* Work in progress warning */
+/* Work in progress warning - this will be removed once website is built.*/
 #workInProgressWarning {
     font-size: 14px;
     margin-top: 20px;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 @media (max-width: 767px) {
     .contentContainer {
-        position: relative;
         bottom: 0;
+        position: relative;
         margin-top: 16vh;
         text-align: center;
         color: white;
     }
 
     nav {
-        display: none;
+        display: flex;
         height: 92px;
-        flex-direction: row;
-        justify-content: center;
         align-items: center;
-        position: relative;
-    }
-
-    nav.active {
-        display: flex;
-        justify-content: flex-start;
         padding-left: 70px;
+        position: sticky;
+        z-index: 3;
     }
-
-    ul {
-        gap: 20px;
+    
+    nav ul {
+        display: none;
+    }
+    nav ul.active {
+        gap: 6px;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
         align-items: center;
         text-align: left;
         list-style-type: none;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        z-index: 3;
+    }
+
+    nav a {
+        color: #032863;
+        border: none;
+        outline: none;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: white;
+        transition: 0.3s;
     }
 
     .hamburgerIcon {
@@ -182,20 +195,20 @@ ul {
         height: 28px;
         cursor: pointer;
         transition: transform 0.3s ease;
-        z-index: 2000;
+        z-index: 10;
     }
 
     .hamburgerIcon.active .bar:nth-child(1) {
-        transform: rotate(45deg) translateY(16.8px); /* Rotate and move up */
+        transform: rotate(45deg) translateY(16.8px);  Rotate and move up 
         background-color: #032863;
     }
 
     .hamburgerIcon.active .bar:nth-child(2) {
-        opacity: 0; /* Hide the middle bar */
+        opacity: 0;  Hide the middle bar 
     }
 
     .hamburgerIcon.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translateY(-16.8px); /* Rotate and move down */
+        transform: rotate(-45deg) translateY(-16.8px);  Rotate and move down 
         background-color: #032863;
     }
 }
