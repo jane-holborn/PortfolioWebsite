@@ -131,8 +131,6 @@ section svg {
     fill: #FF9C33;
 }
 
-
-
 /* Ocean container. */
 .oceanContainer {
     width: 100%;
@@ -228,5 +226,9 @@ section p {
 
     br {
         display: none;
+    }
+
+    .socialMediaGrid {
+        display: flex;
     }
 }
