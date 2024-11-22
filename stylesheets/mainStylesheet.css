@@ -15,8 +15,7 @@ html {
 body {
     font-size: 1.3rem;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #71AEFB 0%, #468ff6 25%, #053a8f 75%, #032863 100%);
-    background-attachment: fixed;
+    background: linear-gradient(to bottom, #468ff6 0%, #053a8f 50%, #032863 100%);
     overflow-x: hidden;
     overflow-y: auto;
     display: flex;
@@ -50,7 +49,7 @@ nav ul.active {
 }
 
 nav a {
-    color: #032863;
+    color: white;
     border: none;
     outline: none;
     padding: 10px;
@@ -58,7 +57,7 @@ nav a {
 }
 
 nav a:hover {
-    color: white;
+    color: #FF9C33;
     transition: 0.3s;
 }
 
@@ -79,28 +78,28 @@ nav a:hover {
 .bar {
     width: 100%;
     height: 4px;
-    background-color: #032863;
+    background-color: white;
     border-radius: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     z-index: 100;
 }
 
 .hamburgerIcon.active .bar:nth-child(1) {
-    transform: rotate(45deg) translateY(18.3px); /* Rotate and move up */
-    background-color: #032863;
+    transform: rotate(45deg) translateY(18.3px);
+    background-color: white;
 }
 
 .hamburgerIcon.active .bar:nth-child(2) {
-    opacity: 0; /* Hide the middle bar */
+    opacity: 0;
 }
 
 .hamburgerIcon.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translateY(-18.3px); /* Rotate and move down */
-    background-color: #032863;
+    transform: rotate(-45deg) translateY(-18.3px);
+    background-color: white;
 }
 
 a {
-    color: #032863;
+    color: white;
     border: none;
     outline: none;
     text-decoration: none;
@@ -117,6 +116,22 @@ section {
     color: white;
     z-index: 100;
 }
+
+section svg {
+    width: 100%;
+    height: 60px;
+}
+
+.socialMediaGrid {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socialMediaGrid svg:hover {
+    fill: #FF9C33;
+}
+
+
 
 /* Ocean container. */
 .oceanContainer {
@@ -136,14 +151,6 @@ section h1 {
 /* Section paragraph Style */
 section p {
     margin: 20px;
-}
-
-/* Icon Styling */
-.contentContainer svg {
-    width: 40px;
-    height: 40px;
-    margin: 10px 10px 10px 10px;
-    cursor: pointer;
 }
 
 /* Work in progress warning - this will be removed once website is built.*/
@@ -199,7 +206,7 @@ section p {
     .bar {
         width: 100%;
         height: 4px;
-        background-color: #032863;
+        background-color: white;
         border-radius: 2px;
         transition: transform 0.3s ease, opacity 0.3s ease;
         z-index: 100;
@@ -207,7 +214,7 @@ section p {
 
     .hamburgerIcon.active .bar:nth-child(1) {
         transform: rotate(45deg) translateY(17px);
-        background-color: #032863;
+        background-color: white;
     }
 
     .hamburgerIcon.active .bar:nth-child(2) {
@@ -216,35 +223,10 @@ section p {
 
     .hamburgerIcon.active .bar:nth-child(3) {
         transform: rotate(-45deg) translateY(-17px);
-        background-color: #032863;
+        background-color: white;
     }
 
     br {
         display: none;
-    }
-
-    nav.scrolled-portfolio .hamburgerIcon .bar {
-        background-color: white;
-    }
-
-    nav.scrolled-portfolio .hamburgerIcon .bar:nth-child(1) {
-        transform: rotate(45deg) translateY(17px);
-        background-color: white;
-    }
-
-    nav.scrolled-portfolio .hamburgerIcon .bar:nth-child(2) {
-        opacity: 0; 
-    }
-
-    nav.scrolled-portfolio .hamburgerIcon .bar:nth-child(3) {
-        transform: rotate(-45deg) translateY(-17px);
-        background-color: white;
-    }
-    nav.scrolled-portfolio a {
-        color: white;
-    }
-
-    nav.scrolled-portfolio a:hover {
-        color: #71aefb;
     }
 }
