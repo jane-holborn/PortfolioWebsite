@@ -25,6 +25,7 @@ nav {
     justify-content: center;
     align-items: center;
     position: sticky;
+    z-index: 3;
 }
 
 nav.active {
@@ -35,6 +36,9 @@ nav.active {
 
 nav a {
     color: #032863;
+    border: none;
+    outline: none;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -51,12 +55,6 @@ ul {
     text-align: left;
     list-style-type: none;
     font-size: 1.6rem;
-}
-
-a {
-    border: none;
-    outline: none;
-    text-decoration: none;
 }
 
 .hamburgerIcon {
@@ -112,11 +110,11 @@ a {
     color: white;
 }
 
-    /* Header Style */
-    .contentContainer h1 {
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-    }
+/* Header Style */
+.contentContainer h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
 
 /* Paragraph Style */
 .paragraphStyle {
