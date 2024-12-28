@@ -107,6 +107,7 @@ a {
 
 section {
     height: 100vh;
+    width: 87vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +115,7 @@ section {
     position: relative;
     text-align: center;
     color: white;
-    z-index: 100;
+    z-index: 1;
 }
 
 .socialMediaGrid {
@@ -136,14 +137,16 @@ section {
     width: 100%;
     height: 100vh;
     position: fixed;
+    bottom: 0;
     left: 0;
     z-index: -1;
+    background: none;
 }
 
 /* Header Style */
 section h1 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
 }
 
 /* Section paragraph Style */
@@ -151,13 +154,22 @@ section p {
     margin: 20px;
 }
 
-/* Work in progress warning - this will be removed once website is built.*/
-#workInProgressWarning {
-    font-size: 14px;
-    margin-top: 20px;
-    padding: 10px;
+div.portfolioGrid {
+    display: grid;
+    gap: 6.0rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 30%;
+    margin: 90px 0;
 }
 
+div.cardContainer {
+    margin: 10px;
+    padding: 40px;
+    border: 2px solid white;
+}
+
+/* Mobile friendly set up */
 @media (max-width: 767px) {
 
 
@@ -230,5 +242,9 @@ section p {
 
     .socialMediaGrid {
         display: flex;
+    }
+
+    div.portfolioGrid {
+        display: none;
     }
 }
