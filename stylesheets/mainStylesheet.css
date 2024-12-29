@@ -143,10 +143,15 @@ section {
     background: none;
 }
 
-/* Header Style */
+/* Header 1 Style */
 section h1 {
     font-size: 3rem;
     margin: 0.5rem;
+}
+
+/* Header 2 Style */
+section h2 {
+    font-size: 1.6rem;
 }
 
 /* Section paragraph Style */
