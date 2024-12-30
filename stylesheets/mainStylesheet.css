@@ -179,6 +179,19 @@ div.cardContainer {
 /* Mobile friendly set up */
 @media (max-width: 767px) {
 
+    body {
+        font-size: 1.3rem;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #468ff6 0%, #053a8f 50%, #032863 100%) !Important;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: flex;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        /*background-attachment: fixed;*/
+    }
 
     nav {
         top: 0;
