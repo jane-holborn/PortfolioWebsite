@@ -188,9 +188,7 @@ div.cardContainer {
         display: flex;
         justify-content: center;
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        /*background-attachment: fixed;*/
+        background-attachment: fixed;
     }
 
     nav {
