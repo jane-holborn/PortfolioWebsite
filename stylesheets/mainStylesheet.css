@@ -19,7 +19,9 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
 }
@@ -108,8 +110,9 @@ a {
 }
 
 section {
-    height: 100vh;
-    width: 87vw;
+    min-height: 100vh;
+    max-width: 87vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,6 +123,14 @@ section {
     z-index: 1;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: white;
+    padding: 0 0 40px 0;
+}
 .socialMediaGrid {
     display: flex;
     gap: 1.5rem;
@@ -148,7 +159,7 @@ section {
 /* Header 1 Style */
 section h1 {
     font-size: 3rem;
-    margin: 0.5rem;
+    margin-top: 5rem;
 }
 
 /* Header 2 Style */
