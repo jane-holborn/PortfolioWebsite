@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
+    /*background-attachment: fixed !important;*/
 }
 
 nav {
@@ -159,7 +159,7 @@ footer {
 /* Header 1 Style */
 section h1 {
     font-size: 3rem;
-    margin-top: 5rem;
+    margin-top: 5.5rem;
 }
 
 /* Header 2 Style */
