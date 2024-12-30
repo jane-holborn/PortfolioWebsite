@@ -36,32 +36,32 @@ nav {
     z-index: 97;
 }
 
-nav ul {
-    display: none;
-}
+    nav ul {
+        display: none;
+    }
 
-nav ul.active {
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    list-style-type: none;
-    font-size: 1.6rem;
-    z-index: 98;
-}
+        nav ul.active {
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            list-style-type: none;
+            font-size: 1.6rem;
+            z-index: 98;
+        }
 
-nav a {
-    color: white;
-    border: none;
-    outline: none;
-    padding: 10px;
-    text-decoration: none;
-}
+    nav a {
+        color: white;
+        border: none;
+        outline: none;
+        padding: 10px;
+        text-decoration: none;
+    }
 
-nav a:hover {
-    color: #FF9C33;
-    transition: 0.3s;
-}
+        nav a:hover {
+            color: #FF9C33;
+            transition: 0.3s;
+        }
 
 .hamburgerIcon {
     display: flex;
@@ -125,14 +125,14 @@ section {
     gap: 1.5rem;
 }
 
-.socialMediaGrid svg {
-    width: 60px;
-    height: 60px;
-}
+    .socialMediaGrid svg {
+        width: 60px;
+        height: 60px;
+    }
 
-.socialMediaGrid svg:hover {
-    fill: #FF9C33;
-}
+        .socialMediaGrid svg:hover {
+            fill: #FF9C33;
+        }
 
 /* Ocean container. */
 .oceanContainer {
@@ -179,17 +179,6 @@ div.cardContainer {
 /* Mobile friendly set up */
 @media (max-width: 767px) {
 
-    body {
-        font-size: 1.3rem;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to bottom, #468ff6 0%, #053a8f 50%, #032863 100%) !Important;
-        overflow-x: hidden;
-        overflow-y: auto;
-        display: flex;
-        justify-content: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
 
     nav {
         top: 0;
