@@ -23,7 +23,6 @@ body {
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat !important;
-    /*background-attachment: fixed !important;*/
 }
 
 nav {
@@ -131,6 +130,8 @@ footer {
     color: white;
     padding: 0 0 40px 0;
 }
+
+/* Social media icons for GitHub and LinkedIn */
 .socialMediaGrid {
     display: flex;
     gap: 1.5rem;
@@ -271,6 +272,7 @@ div.cardContainer {
     }
 }
 
+/* Tablet | iPad friendly set up */
 @media (min-width: 768px) and (max-width: 1024px) {
 
     nav {
