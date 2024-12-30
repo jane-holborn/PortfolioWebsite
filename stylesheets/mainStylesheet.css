@@ -15,13 +15,13 @@ html {
 body {
     font-size: 1.3rem;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #468ff6 0%, #053a8f 50%, #032863 100%);
+    background: linear-gradient(to bottom, #468ff6 0%, #053a8f 50%, #032863 100%) !important;
     overflow-x: hidden;
     overflow-y: auto;
     display: flex;
     justify-content: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
 }
 
 nav {
@@ -36,32 +36,32 @@ nav {
     z-index: 97;
 }
 
-    nav ul {
-        display: none;
-    }
+nav ul {
+    display: none;
+}
 
-        nav ul.active {
-            gap: 20px;
-            display: flex;
-            align-items: center;
-            text-align: left;
-            list-style-type: none;
-            font-size: 1.6rem;
-            z-index: 98;
-        }
+nav ul.active {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    list-style-type: none;
+    font-size: 1.6rem;
+    z-index: 98;
+}
 
-    nav a {
-        color: white;
-        border: none;
-        outline: none;
-        padding: 10px;
-        text-decoration: none;
-    }
+nav a {
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    text-decoration: none;
+}
 
-        nav a:hover {
-            color: #FF9C33;
-            transition: 0.3s;
-        }
+nav a:hover {
+    color: #FF9C33;
+    transition: 0.3s;
+}
 
 .hamburgerIcon {
     display: flex;
@@ -125,14 +125,14 @@ section {
     gap: 1.5rem;
 }
 
-    .socialMediaGrid svg {
-        width: 60px;
-        height: 60px;
-    }
+.socialMediaGrid svg {
+    width: 60px;
+    height: 60px;
+}
 
-        .socialMediaGrid svg:hover {
-            fill: #FF9C33;
-        }
+.socialMediaGrid svg:hover {
+    fill: #FF9C33;
+}
 
 /* Ocean container. */
 .oceanContainer {
@@ -163,7 +163,7 @@ section p {
 
 div.portfolioGrid {
     display: grid;
-    gap: 6.0rem;
+    gap: 4.0rem;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: 30%;
@@ -178,7 +178,6 @@ div.cardContainer {
 
 /* Mobile friendly set up */
 @media (max-width: 767px) {
-
 
     nav {
         top: 0;
@@ -255,6 +254,89 @@ div.cardContainer {
         display: grid;
         gap: 1.5rem;
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 30%;
+        margin: 40px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    nav {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        height: 92px;
+        align-items: center;
+        padding-left: 70px;
+        z-index: 101;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        gap: 6px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        list-style-type: none;
+        font-size: 1.3rem;
+        z-index: 102;
+    }
+
+    .hamburgerIcon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 34px;
+        height: 28px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        z-index: 103;
+    }
+
+    .bar {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 100;
+    }
+
+    .hamburgerIcon.active .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(17px);
+        background-color: white;
+    }
+
+    .hamburgerIcon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerIcon.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-17px);
+        background-color: white;
+    }
+
+    br {
+        display: none;
+    }
+
+    .socialMediaGrid {
+        display: flex;
+    }
+
+    div.portfolioGrid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
         width: 100%;
         height: 30%;
         margin: 40px 0;
