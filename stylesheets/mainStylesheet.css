@@ -166,12 +166,21 @@ section h1 {
 
 /* Header 2 Style */
 section h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    text-decoration: underline;
 }
 
 /* Section paragraph Style */
-section p {
+section p.homePageIntroduction {
     margin: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+section p {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 div.portfolioGrid {
@@ -187,6 +196,14 @@ div.cardContainer {
     padding: 40px;
     min-height: 300px;
     border: 2px solid white;
+}
+
+div.cardContainer:hover {
+    color: #FF9C33;
+    border: 2px solid #FF9C33;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.03);
 }
 
 /* Mobile friendly set up */
