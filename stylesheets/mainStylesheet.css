@@ -200,8 +200,10 @@ div.cardContainer {
 }
 
 div.cardContainer:hover {
-    color: #FF9C33;
-    border: 2px solid #FF9C33;
+    color: white;
+    background-color: rgba(3, 40, 99, 1);
+    border: 2px solid white;
+    box-shadow: 4px 4px 10px rgba(255, 156, 51, 1);
     transition: 0.3s;
     transform: scale(1.03);
 }
