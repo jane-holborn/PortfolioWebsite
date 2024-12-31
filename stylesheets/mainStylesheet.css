@@ -196,14 +196,20 @@ div.cardContainer {
     padding: 40px;
     min-height: 300px;
     border: 2px solid white;
+    cursor: pointer;
 }
 
 div.cardContainer:hover {
     color: #FF9C33;
     border: 2px solid #FF9C33;
-    cursor: pointer;
     transition: 0.3s;
     transform: scale(1.03);
+}
+
+div.cardContainer a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Mobile friendly set up */
