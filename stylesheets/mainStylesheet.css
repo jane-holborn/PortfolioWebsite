@@ -172,9 +172,13 @@ section h2 {
 
 /* Section paragraph Style */
 section p.homePageIntroduction {
-    margin: 20px;
+    margin: 24px;
     text-align: center;
     font-size: 1.3rem;
+}
+
+section h1.homePageIntroduction {
+    margin: 0;
 }
 
 section p {
