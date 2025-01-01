@@ -188,7 +188,7 @@ footer {
 }
 
 /* Portfolio styling */
-div.portfolioGrid {
+.portfolioGrid {
     display: grid;
     gap: 2.0rem;
     grid-template-columns: repeat(3, 1fr);
@@ -196,7 +196,7 @@ div.portfolioGrid {
     margin: 50px 0 0 0;
 }
 
-div.portfolioCardContainer {
+.portfolioCardContainer {
     margin: 10px;
     padding: 40px;
     min-height: 300px;
@@ -205,7 +205,7 @@ div.portfolioCardContainer {
     cursor: pointer;
 }
 
-div.portfolioCardContainer:hover {
+.portfolioCardContainer:hover {
     color: white;
     background-color: rgba(70, 143, 246, 1);
     border: 2px solid white;
@@ -214,36 +214,39 @@ div.portfolioCardContainer:hover {
     transform: scale(1.03);
 }
 
-div.portfolioCardContainer a {
+.portfolioCardContainer a {
     display: block;
     text-decoration: none;
     color: inherit;
 }
 
-div.portfolioCardContainer:nth-child(1) {
+/* Portfolio Website */
+.portfolioCardContainer:nth-child(1) {
     grid-column-start: 1;
     grid-row-start: 1;
     grid-column: span 2;
 }
-
-div.portfolioCardContainer:nth-child(2) {
+/*To-do List Application */
+.portfolioCardContainer:nth-child(2) {
     grid-column-start: 2;
     grid-row-start: 2;
     grid-column: span 2;
 }
 
-div.portfolioCardContainer:nth-child(3) {
+/* Basic Calculator */
+.portfolioCardContainer:nth-child(3) {
     grid-column-start: 3;
     grid-row-start:1;
 }
 
-div.portfolioCardContainer:nth-child(4) {
+/* Weather Application */
+.portfolioCardContainer:nth-child(4) {
     grid-column-start: 1;
     grid-row-start: 2;
 }
 
 /* Resume styling */
-div.resumeGrid {
+.resumeGrid {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
@@ -251,7 +254,7 @@ div.resumeGrid {
     margin: 50px 0 0 0;
 }
 
-div.resumeCardContainer {
+.resumeCardContainer {
     margin: 10px;
     padding: 40px;
     min-height: 300px;
@@ -259,18 +262,21 @@ div.resumeCardContainer {
     border-radius: 4px;
 }
 
+/* Work Experience */
 .resumeCardContainer:nth-child(1) {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-column-end: span 3;
 }
 
+/* Qualifications */
 .resumeCardContainer:nth-child(2) {
     grid-column-start: 1;
     grid-row-start: 2;
     grid-column: span 3;
 }
 
+/* Skills */
 .resumeCardContainer:nth-child(3) {
     grid-column-start: 1;
     grid-row-start: 1;
@@ -351,13 +357,65 @@ div.resumeCardContainer {
         display: flex;
     }
 
+    /* Portfolio Styling */
     div.portfolioGrid {
         display: grid;
         gap: 1.5rem;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         width: 100%;
         height: 30%;
         margin: 40px 0;
+    }
+    /* Portfolio Website */
+    div.portfolioGrid .portfolioCardContainer:nth-child(1) {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    /* To-do List Application */
+    div.portfolioGrid .portfolioCardContainer:nth-child(2) {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+     /* Basic Calculator */
+    div.portfolioGrid .portfolioCardContainer:nth-child(3) {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+     /* Weather Application */
+    div.portfolioGrid .portfolioCardContainer:nth-child(4) {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+
+    /* Resume Styling */
+    div.resumeGrid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 30%;
+        margin: 40px 0;
+    }
+    /* Work experience */
+    div.resumeGrid .resumeCardContainer:nth-child(1) {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column: span 4;
+    }
+    /* Qualifications */
+    div.resumeGrid .resumeCardContainer:nth-child(2) {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-column: span 4;
+    }
+
+    /* Skills */
+    div.resumeGrid .resumeCardContainer:nth-child(3) {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-column: span 4;
     }
 }
 
@@ -435,12 +493,72 @@ div.resumeCardContainer {
         display: flex;
     }
 
+    /* Portfolio styling */
     div.portfolioGrid {
         display: grid;
         gap: 1.5rem;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         width: 100%;
         height: 30%;
         margin: 40px 0;
     }
+    /* Portfolio Website */
+    div.portfolioGrid .portfolioCardContainer:nth-child(1) {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column: span 2;
+    }
+
+    /*To-do List Application */
+    div.portfolioGrid .portfolioCardContainer:nth-child(2) {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-column: span 2;
+    }
+    /* Basic Calculator */
+    div.portfolioGrid .portfolioCardContainer:nth-child(3) {
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+
+    /* Weather Application */
+    div.porfolioGrid .portfolioCardContainer:nth-child(4) {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    /* Resume Styling */
+    div.resumeGrid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 30%;
+        margin: 40px 0;
+    }
+    /* Work experience */
+    div.resumeGrid .resumeCardContainer:nth-child(1) {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column: span 4;
+    }
+    /* Qualifications */
+    div.resumeGrid .resumeCardContainer:nth-child(2) {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-column: span 4;
+    }
+
+    /* Skills */
+    div.resumeGrid .resumeCardContainer:nth-child(3) {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-column: span 4;
+    }
+}
+
+/* Wide screen styling */
+
+@media (min-width: 1700) {
+
 }
