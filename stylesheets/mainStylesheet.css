@@ -137,8 +137,18 @@ section h1 {
 }
 
 section h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-decoration: underline;
+}
+
+section h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 20px;
+    text-decoration: none;
 }
 
 section p {
@@ -321,8 +331,8 @@ footer {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-content: flex-start;
     text-align: left;
 }
 
