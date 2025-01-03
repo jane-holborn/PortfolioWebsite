@@ -65,6 +65,12 @@ nav a:hover {
     transition: 0.3s;
 }
 
+.hamburgerIconBackground {
+    display: flex;
+
+    background-color: red;
+}
+
 .hamburgerIcon {
     display: flex;
     flex-direction: column;
@@ -138,7 +144,7 @@ section h2 {
 section p {
     margin: 10px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 section p.homePageIntroduction {
@@ -179,8 +185,8 @@ footer {
 }
 
 .socialMediaGrid svg {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 .socialMediaGrid svg:hover {
@@ -272,34 +278,21 @@ footer {
 
 /* Professional Experience */
 .resumeCardContainer:nth-child(1) {
-    grid-column-start: 1;
+    grid-column: 2 / span 2;
     grid-row: 1 / span 2;
-    grid-column: span 2;
+
 }
 
 /* Qualifications */
 .resumeCardContainer:nth-child(2) {
-    grid-column-start: 1;
+    grid-column: 2 / span 2;
     grid-row-start: 3;
-    grid-column: span 2;
 }
 
-/* Languages */
+/* Technical Skills */
 .resumeCardContainer:nth-child(3) {
     grid-column-start: 1;
-    grid-row-start: 1;
-}
-
-/* Technology */
-.resumeCardContainer:nth-child(4) {
-    grid-column-start: 1;
-    grid-row-start: 2;
-}
-
-/* Skills */
-.resumeCardContainer:nth-child(5) {
-    grid-column-start: 1;
-    grid-row-start: 3;
+    grid-row: 1 / span 3;
 }
 
 .largeCardContainer {
@@ -357,7 +350,7 @@ footer {
         align-items: center;
         text-align: left;
         list-style-type: none;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         z-index: 102;
     }
 
@@ -400,6 +393,23 @@ footer {
 
     #home br {
         display: none;
+    }
+
+    section p {
+        margin: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    section p.homePageIntroduction {
+        margin: 24px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .largeCardContainer li {
+        font-size: 1.2rem;
+        padding-left: 5px;
     }
 
     footer {
@@ -461,7 +471,7 @@ footer {
         align-items: center;
         text-align: left;
         list-style-type: none;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         z-index: 102;
     }
 
@@ -506,6 +516,23 @@ footer {
         display: none;
     }
 
+    section p {
+        margin: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    section p.homePageIntroduction {
+        margin: 24px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .largeCardContainer li {
+        font-size: 1.2rem;
+        padding-left: 5px;
+    }
+
     footer {
         display: flex;
         justify-content: center;
@@ -530,16 +557,14 @@ footer {
     }
     /* Portfolio Website */
     div.portfolioGrid .portfolioCardContainer:nth-child(1) {
-        grid-column-start: 1;
+        grid-column: 1 / span 2;
         grid-row-start: 1;
-        grid-column: span 2;
     }
 
     /*To-do List Application */
     div.portfolioGrid .portfolioCardContainer:nth-child(2) {
-        grid-column-start: 2;
+        grid-column: 2 / span 2;
         grid-row-start: 2;
-        grid-column: span 2;
     }
     /* Basic Calculator */
     div.portfolioGrid .portfolioCardContainer:nth-child(3) {
