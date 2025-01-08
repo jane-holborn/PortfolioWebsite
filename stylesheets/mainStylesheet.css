@@ -119,6 +119,7 @@ a {
 hr {
     width: 80%;
     margin: 20px auto;
+    border: 1px solid white;
 }
 
 /* Section styling */
@@ -327,12 +328,18 @@ footer {
     grid-row: 2 / span 3;
 }
 
-.smallCardContainer {
-    width: 100%;
-    margin: 20px 0;
+ul.smallCardContainer {
+    width: 80%;
+    margin: 24px auto 0 auto;
+    padding: 0 24px;
     display: flex;
+    gap: 4px;
     flex-direction: column;
     text-align: left;
+}
+
+ul.smallCardContainer li {
+
 }
 
 /* Mobile friendly set up */
@@ -422,11 +429,6 @@ footer {
         margin: 24px 14px;
         text-align: center;
         font-size: 1.3rem;
-    }
-
-    .largeCardContainer li {
-        font-size: 1.3rem;
-        padding-left: 5px;
     }
 
     footer {
