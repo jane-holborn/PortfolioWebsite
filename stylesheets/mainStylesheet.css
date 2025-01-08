@@ -295,6 +295,9 @@ footer {
 }
 
 .resumeCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 300px;
     padding: 40px 0;
     border: 2px solid white;
