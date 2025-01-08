@@ -127,6 +127,7 @@ section {
     min-height: 100vh;
     max-width: 87vw;
     display: flex;
+    gap: 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -151,7 +152,7 @@ section h3 {
     flex-direction: column;
     text-align: center;
     font-size: 1.4rem;
-    margin: 24px 14px 0 14px;
+    margin:0 14px;
     text-decoration: none;
 }
 
@@ -165,7 +166,7 @@ section h4 {
 section p {
     text-align: center;
     font-size: 1.3rem;
-    margin: 24px 14px 0 14px;
+    margin: 0 14px;
 }
 
 section p.professionalSummaryStyling {
@@ -173,7 +174,7 @@ section p.professionalSummaryStyling {
 }
 
 section p.homePageIntroduction {
-    margin: 24px;
+    margin: 0 24px;
     text-align: center;
     font-size: 1.3rem;
 }
@@ -237,7 +238,6 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    padding: 40px;
     min-height: 300px;
     border: 2px solid white;
     border-radius: 4px;
@@ -296,6 +296,7 @@ footer {
 
 .resumeCardContainer {
     display: flex;
+    gap: 1.6rem;
     flex-direction: column;
     justify-content: center;
     min-height: 300px;
@@ -336,10 +337,6 @@ ul.smallCardContainer {
     gap: 4px;
     flex-direction: column;
     text-align: left;
-}
-
-ul.smallCardContainer li {
-
 }
 
 /* Mobile friendly set up */
@@ -420,7 +417,7 @@ ul.smallCardContainer li {
     }
 
     section p {
-        margin: 24px 14px 0 14px;
+        margin: 0 14px;
         text-align: center;
         font-size: 1.3rem;
     }
@@ -564,7 +561,7 @@ ul.smallCardContainer li {
     }
 
     section p {
-        margin: 10px;
+        margin: 0 10px;
         text-align: center;
         font-size: 1.3rem;
     }
