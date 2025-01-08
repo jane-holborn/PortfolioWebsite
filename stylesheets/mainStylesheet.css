@@ -289,16 +289,12 @@ footer {
 .resumeGrid {
     display: grid;
     gap: 2rem 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
     margin: 50px 0 0 0;
 }
 
 .resumeCardContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 300px;
     padding: 40px 0;
     border: 2px solid white;
@@ -307,25 +303,25 @@ footer {
 
 /* Professional Summary */
 .resumeCardContainer:nth-child(1) {
-    grid-column: 1 / span 3;
+    grid-column: 1 / 5;
     grid-row-start: 1;
 }
 /* Work Experience */
 .resumeCardContainer:nth-child(2) {
-    grid-column: 2 / span 2;
+    grid-column: 2 / 5;
     grid-row: 2 / span 2;
 }
 
 /* Qualifications */
 .resumeCardContainer:nth-child(3) {
-    grid-column: 2 / span 2;
+    grid-column: 2 / 5;
     grid-row-start: 4;
 }
 
 /* Technical Skills */
 .resumeCardContainer:nth-child(4) {
     grid-column-start: 1;
-    grid-row: 2 / span 3;
+    grid-row: 2 / 5;
 }
 
 ul.smallCardContainer {
@@ -462,6 +458,22 @@ ul.smallCardContainer li {
         width: 100%;
         height: 30%;
         margin: 40px 0;
+    }
+
+    div.mobileGridTemplate {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 24px 24px 0 24px;
+    }
+
+    div.mobileGridCardContainer {
+        border: 2px solid white;
+        border-radius: 4px;
+    }
+
+    div.mobileGridCardContainer ul.smallCardContainer {
+        margin: 24px auto;
     }
 }
 
@@ -613,6 +625,20 @@ ul.smallCardContainer li {
         width: 100%;
         height: 30%;
         margin: 40px 0;
+    }
+
+    div.mobileGridTemplate {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 24px 24px 0 24px;
+    }
+    div.mobileGridCardContainer {
+        border: 2px solid white;
+        border-radius: 4px;
+    }
+    div.mobileGridCardContainer ul.smallCardContainer {
+        margin: 24px auto;
     }
 }
 
