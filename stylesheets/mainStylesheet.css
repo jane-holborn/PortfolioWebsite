@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #468ff6 0%, #053a8f 50%, #032863 100%) !important;
     overflow-x: hidden;
@@ -152,7 +152,7 @@ section h3 {
 
 section p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 section p.professionalSummaryStyling {
@@ -198,8 +198,8 @@ footer {
 }
 
 .socialMediaGrid svg {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .socialMediaGrid svg:hover {
@@ -343,7 +343,7 @@ footer {
         align-items: center;
         text-align: left;
         list-style-type: none;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         z-index: 102;
     }
 
@@ -391,17 +391,17 @@ footer {
     section p {
         margin: 10px;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     section p.homePageIntroduction {
         margin: 24px;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .largeCardContainer li {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         padding-left: 5px;
     }
 
@@ -464,7 +464,7 @@ footer {
         align-items: center;
         text-align: left;
         list-style-type: none;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         z-index: 102;
     }
 
@@ -512,17 +512,17 @@ footer {
     section p {
         margin: 10px;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     section p.homePageIntroduction {
         margin: 24px;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .largeCardContainer li {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         padding-left: 5px;
     }
 
