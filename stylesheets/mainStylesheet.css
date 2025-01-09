@@ -211,7 +211,6 @@ footer {
 .socialMediaGrid {
     display: flex;
     gap: 1.5rem;
-    margin: 1rem;
 }
 
 .socialMediaGrid svg {
@@ -332,7 +331,7 @@ footer {
 ul.smallCardContainer {
     width: 80%;
     margin: 24px auto 0 auto;
-    padding: 0 24px;
+    padding: 0;
     display: flex;
     gap: 4px;
     flex-direction: column;
@@ -423,7 +422,7 @@ ul.smallCardContainer {
     }
 
     section p.homePageIntroduction {
-        margin: 24px 14px;
+        margin: 0 24px;
         text-align: center;
         font-size: 1.3rem;
     }
@@ -561,13 +560,13 @@ ul.smallCardContainer {
     }
 
     section p {
-        margin: 0 10px;
+        margin: 0 14px;
         text-align: center;
         font-size: 1.3rem;
     }
 
     section p.homePageIntroduction {
-        margin: 24px;
+        margin: 0 24px;
         text-align: center;
         font-size: 1.3rem;
     }
@@ -595,9 +594,7 @@ ul.smallCardContainer {
         display: grid;
         gap: 1.5rem 1rem;
         grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        height: 30%;
-        margin: 40px 0;
+        margin: 0;
     }
     /* Portfolio Website */
     div.portfolioGrid .portfolioCardContainer:nth-child(1) {
@@ -629,14 +626,14 @@ ul.smallCardContainer {
         gap: 1.5rem;
         width: 100%;
         height: 30%;
-        margin: 40px 0;
+        margin: 0;
     }
 
     div.mobileGridTemplate {
         display: grid;
-        gap: 1.5rem;
+        gap: 2rem;
         grid-template-columns: repeat(2,1fr);
-        margin: 24px 24px 0 24px;
+        margin: 0 30px;
     }
 
     div.mobileGridTemplate hr {
@@ -644,12 +641,17 @@ ul.smallCardContainer {
     }
 
     div.mobileGridCardContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 14px;
+        gap: 1.5rem;
         border: 2px solid white;
         border-radius: 4px;
     }
 
     div.mobileGridCardContainer ul.smallCardContainer {
-        margin: 24px auto;
+        margin: 0 auto;
     }
 }
 
