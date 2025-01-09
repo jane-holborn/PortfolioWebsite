@@ -196,7 +196,7 @@ footer {
     align-items: center;
     font-size: 0.8rem;
     color: white;
-    padding: 30px 0;
+    padding: 0 0 30px 0;
 }
 
 /* Ocean container. */
@@ -462,7 +462,7 @@ ul.smallCardContainer {
         align-items: center;
         font-size: 0.8rem;
         color: white;
-        padding: 30px 0;
+        padding: 0 0 30px 0;
     }
 
     .socialMediaGrid {
@@ -619,7 +619,7 @@ ul.smallCardContainer {
         align-items: center;
         font-size: 0.8rem;
         color: white;
-        padding: 30px 0;
+        padding: 0 0 30px 0;
     }
 
     .socialMediaGrid {
