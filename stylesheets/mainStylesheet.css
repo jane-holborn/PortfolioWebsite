@@ -118,7 +118,7 @@ a {
 
 hr {
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
     border: 1px solid #FF9C33;
 }
 
@@ -127,7 +127,7 @@ section {
     min-height: 100vh;
     max-width: 87vw;
     display: flex;
-    gap: 1.5rem;
+    gap: 2.4rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -152,7 +152,8 @@ section h3 {
     flex-direction: column;
     text-align: center;
     font-size: 1.4rem;
-    margin:0 14px;
+    margin:0;
+    padding: 0 14px;
     text-decoration: none;
 }
 
@@ -160,21 +161,23 @@ section h4 {
     font-size: 1.1rem;
     font-weight: lighter;
     text-align: center;
-    margin: 14px;
+    margin: 0 14px;
 }
 
 section p {
     text-align: center;
     font-size: 1.3rem;
-    margin: 0 14px;
+    margin: 0;
 }
 
 section p.professionalSummaryStyling {
     text-align: center;
+    padding: 0 14px;
 }
 
 section p.homePageIntroduction {
-    margin: 0 24px;
+    margin: 0;
+    padding: 0 24px;
     text-align: center;
     font-size: 1.3rem;
 }
@@ -193,7 +196,7 @@ footer {
     align-items: center;
     font-size: 0.8rem;
     color: white;
-    padding: 40px 0 40px 0;
+    padding: 30px 0;
 }
 
 /* Ocean container. */
@@ -211,11 +214,12 @@ footer {
 .socialMediaGrid {
     display: flex;
     gap: 1.5rem;
+    margin: 10px;
 }
 
 .socialMediaGrid svg {
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
 }
 
 .socialMediaGrid svg:hover {
@@ -228,7 +232,7 @@ footer {
     gap: 2rem 1.5rem;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    margin: 50px 0 0 0;
+    margin: 0;
 }
 
 .portfolioCardContainer {
@@ -236,7 +240,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 0;
+    padding: 14px;
     min-height: 300px;
     border: 2px solid white;
     border-radius: 4px;
@@ -290,12 +295,12 @@ footer {
     gap: 2rem 1.5rem;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    margin: 50px 0 0 0;
+    margin: 0;
 }
 
 .resumeCardContainer {
     display: flex;
-    gap: 1.6rem;
+    gap: 2rem;
     flex-direction: column;
     justify-content: center;
     min-height: 300px;
@@ -303,6 +308,22 @@ footer {
     border: 2px solid white;
     border-radius: 4px;
     background-color: rgba(5, 58, 143, 0.6);
+}
+
+.workExperienceCardContainer {
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 14px;
+}
+
+.educationCardContainer {
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 14px;
 }
 
 /* Professional Summary */
@@ -330,7 +351,7 @@ footer {
 
 ul.smallCardContainer {
     width: 80%;
-    margin: 24px auto 0 auto;
+    margin: 14px auto;
     padding: 0;
     display: flex;
     gap: 4px;
@@ -416,13 +437,13 @@ ul.smallCardContainer {
     }
 
     section p {
-        margin: 0 14px;
+        margin: 0;
         text-align: center;
         font-size: 1.3rem;
     }
 
     section p.homePageIntroduction {
-        margin: 0 24px;
+        padding: 0 24px;
         text-align: center;
         font-size: 1.3rem;
     }
@@ -433,7 +454,7 @@ ul.smallCardContainer {
         align-items: center;
         font-size: 0.8rem;
         color: white;
-        padding: 0 0 40px 0;
+        padding: 30px 0;
     }
 
     .socialMediaGrid {
@@ -444,27 +465,27 @@ ul.smallCardContainer {
     div.portfolioGrid {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem 1rem;
+        gap: 1.5rem;
         width: 100%;
         height: 30%;
-        margin: 40px 0;
+        margin: 0;
     }
 
     /* Resume Styling */
     div.resumeGrid {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem 1rem;
+        gap: 1.5rem;
         width: 100%;
         height: 30%;
-        margin: 40px 0;
+        margin: 0;
     }
 
     div.mobileGridTemplate {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        margin: 24px 24px 0 24px;
+        margin: 0 24px;
     }
 
     div.mobileGridTemplate hr {
@@ -472,12 +493,17 @@ ul.smallCardContainer {
     }
 
     div.mobileGridCardContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        gap:1.2rem;
         border: 2px solid white;
         border-radius: 4px;
+        padding: 14px;
     }
 
     div.mobileGridCardContainer ul.smallCardContainer {
-        margin: 24px auto;
+        margin: 0 auto;
     }
 }
 
@@ -582,7 +608,7 @@ ul.smallCardContainer {
         align-items: center;
         font-size: 0.8rem;
         color: white;
-        padding: 0 0 40px 0;
+        padding: 30px 0;
     }
 
     .socialMediaGrid {
@@ -592,7 +618,7 @@ ul.smallCardContainer {
     /* Portfolio styling */
     div.portfolioGrid {
         display: grid;
-        gap: 1.5rem 1rem;
+        gap: 2rem 1rem;
         grid-template-columns: repeat(3, 1fr);
         margin: 0;
     }
