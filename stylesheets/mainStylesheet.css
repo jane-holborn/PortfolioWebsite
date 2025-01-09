@@ -161,7 +161,7 @@ section h4 {
     font-size: 1.1rem;
     font-weight: lighter;
     text-align: center;
-    margin: 0 14px;
+    margin: 0;
 }
 
 section p {
@@ -326,6 +326,14 @@ footer {
     padding: 0 14px;
 }
 
+.technicalCardContainer {
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 14px;
+}
+
 /* Professional Summary */
 .resumeCardContainer:nth-child(1) {
     grid-column: 1 / 5;
@@ -481,6 +489,10 @@ ul.smallCardContainer {
         margin: 0;
     }
 
+   .technicalCardContainer {
+        padding: 0;
+    }
+
     div.mobileGridTemplate {
         display: flex;
         flex-direction: column;
@@ -586,13 +598,12 @@ ul.smallCardContainer {
     }
 
     section p {
-        margin: 0 14px;
+        margin: 0;
         text-align: center;
         font-size: 1.3rem;
     }
 
     section p.homePageIntroduction {
-        margin: 0 24px;
         text-align: center;
         font-size: 1.3rem;
     }
@@ -653,6 +664,10 @@ ul.smallCardContainer {
         width: 100%;
         height: 30%;
         margin: 0;
+    }
+
+    .technicalCardContainer {
+        padding: 0;
     }
 
     div.mobileGridTemplate {
