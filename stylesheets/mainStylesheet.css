@@ -247,6 +247,7 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     background: linear-gradient(to bottom, rgba(113, 174, 251, 0.6) 0%, rgba(3, 40, 99, 0.6) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .portfolioCardContainer:hover {
@@ -308,6 +309,7 @@ footer {
     border: 2px solid white;
     border-radius: 4px;
     background: linear-gradient(to bottom, rgba(113, 174, 251, 0.6) 0%, rgba(3, 40, 99, 0.6) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .workExperienceCardContainer {
