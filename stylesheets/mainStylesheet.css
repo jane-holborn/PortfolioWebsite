@@ -159,14 +159,15 @@ section h3 {
 }
 
 section h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: lighter;
-    text-align: center;
-    margin: 0;
 }
 
 section h5 {
+    font-size: 1rem;
     font-weight: lighter;
+    text-align: center;
+    margin: 0;
 }
 
 section p {
@@ -715,6 +716,6 @@ ul.smallCardContainer {
 
 /* Wide screen styling */
 
-@media (min-width: 1700) {
+@media (min-width: 1700px) {
 
 }
