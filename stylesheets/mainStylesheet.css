@@ -62,7 +62,7 @@ nav a {
 
 nav a:hover {
     color: #FF9C33;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .hamburgerIconBackground {
@@ -81,7 +81,7 @@ nav a:hover {
     width: 42px;
     height: 30px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
     z-index: 99;
 }
 
@@ -90,7 +90,7 @@ nav a:hover {
     height: 4px;
     background-color: white;
     border-radius: 2px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease;
     z-index: 100;
 }
 
@@ -246,8 +246,7 @@ footer {
     border: 2px solid white;
     border-radius: 4px;
     cursor: pointer;
-    /*background-color: rgba(3, 86, 99, 0.6);*/
-    background: linear-gradient(to bottom, rgba(113, 174, 251, 0.6) 0%, /*rgba(5, 129, 143, 0.6) 50%,*/ rgba(3, 40, 99, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(113, 174, 251, 0.6) 0%, rgba(3, 40, 99, 0.6) 100%);
 }
 
 .portfolioCardContainer:hover {
@@ -255,8 +254,8 @@ footer {
     background-color: rgba(5, 58, 143, 1);
     border: 2px solid white;
     box-shadow: 4px 4px 10px 0 rgba(255, 156, 51, 0.8);
-    transition: 0.3s;
-    transform: scale(1.03);
+    transition: 0.4s;
+    transform: scale(1.02);
 }
 
 .portfolioCardContainer a {
@@ -308,8 +307,7 @@ footer {
     padding: 40px 0;
     border: 2px solid white;
     border-radius: 4px;
-    /*background-color: rgba(46, 123, 105, 0.6);*/
-    background: linear-gradient(to bottom, rgba(113, 174, 251, 0.6) 0%, /*rgba(5, 129, 143, 0.6) 50%,*/ rgba(3, 40, 99, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(113, 174, 251, 0.6) 0%, rgba(3, 40, 99, 0.6) 100%);
 }
 
 .workExperienceCardContainer {
@@ -407,7 +405,7 @@ ul.smallCardContainer {
         width: 34px;
         height: 28px;
         cursor: pointer;
-        transition: transform 0.3s ease;
+        transition: transform 0.4s ease;
         z-index: 103;
     }
 
@@ -416,7 +414,7 @@ ul.smallCardContainer {
         height: 4px;
         background-color: white;
         border-radius: 2px;
-        transition: transform 0.3s ease, opacity 0.3s ease;
+        transition: transform 0.4s ease, opacity 0.3s ease;
         z-index: 100;
     }
 
@@ -502,18 +500,18 @@ ul.smallCardContainer {
         margin: 0 24px;
     }
 
-    div.mobileGridTemplate hr {
+  /*  div.mobileGridTemplate hr {
         display: none;
-    }
+    }*/
 
     div.mobileGridCardContainer {
         display: flex;
         flex-direction: column;
         justify-content:center;
         gap:1.2rem;
-        border: 2px solid white;
-        border-radius: 4px;
-        padding: 14px;
+/*        border: 2px solid white;
+        border-radius: 4px;*/
+/*        padding: 14px;*/
     }
 
     div.mobileGridCardContainer ul.smallCardContainer {
@@ -560,7 +558,7 @@ ul.smallCardContainer {
         width: 34px;
         height: 28px;
         cursor: pointer;
-        transition: transform 0.3s ease;
+        transition: transform 0.4s ease;
         z-index: 103;
     }
 
@@ -569,7 +567,7 @@ ul.smallCardContainer {
         height: 4px;
         background-color: white;
         border-radius: 2px;
-        transition: transform 0.3s ease, opacity 0.3s ease;
+        transition: transform 0.4s ease, opacity 0.4s ease;
         z-index: 100;
     }
 
