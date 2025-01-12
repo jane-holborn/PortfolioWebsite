@@ -252,7 +252,7 @@ footer {
     border: 2px solid white;
     border-radius: 4px;
     cursor: pointer;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
     background: rgba(36, 82, 150, 0.6);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -315,7 +315,7 @@ footer {
     padding: 40px 0;
     border: 2px solid white;
     border-radius: 4px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
     background: rgba(36, 82, 150, 0.6);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -490,7 +490,7 @@ ul.smallCardContainer {
     }
 
     .portfolioCardContainer {
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(2px);
         background: rgba(36, 82, 150, 0.6);
     }
 
@@ -505,7 +505,7 @@ ul.smallCardContainer {
     }
 
     .resumeCardContainer {
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(2px);
         background: rgba(36, 82, 150, 0.6);
     }
 
@@ -648,7 +648,7 @@ ul.smallCardContainer {
     }
 
     .portfolioCardContainer {
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(2px);
         background: rgba(36, 82, 150, 0.6);
     }
 
@@ -686,7 +686,7 @@ ul.smallCardContainer {
     }
 
     .resumeCardContainer {
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(2px);
         background: rgba(36, 82, 150, 0.6);
     }
 
