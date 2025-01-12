@@ -394,6 +394,9 @@ ul.smallCardContainer {
     text-align: left;
 }
 
+.coralBackground {
+    overflow: hidden;
+}
 /* Mobile friendly set up */
 @media (max-width: 767px) {
     nav {
