@@ -395,6 +395,7 @@ ul.smallCardContainer {
 }
 
 .coralBackground svg {
+    display: block;
     width: 100%;
     overflow: hidden;
 }
