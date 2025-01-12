@@ -493,7 +493,7 @@ ul.smallCardContainer {
 
     .portfolioCardContainer {
         backdrop-filter: blur(2px);
-        background: rgba(36, 82, 150, 0.8);
+        background: rgba(36, 82, 150, 0.6);
     }
 
     /* Resume Styling */
@@ -651,7 +651,7 @@ ul.smallCardContainer {
 
     .portfolioCardContainer {
         backdrop-filter: blur(2px);
-        background: rgba(36, 82, 150, 0.8);
+        background: rgba(36, 82, 150, 0.6);
     }
 
     /* Portfolio Website */
@@ -689,7 +689,7 @@ ul.smallCardContainer {
 
     .resumeCardContainer {
         backdrop-filter: blur(2px);
-        background: rgba(36, 82, 150, 0.8);
+        background: rgba(36, 82, 150, 0.6);
     }
 
     .technicalCardContainer {
