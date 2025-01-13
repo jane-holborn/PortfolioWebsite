@@ -443,7 +443,7 @@ ul.smallCardContainer {
         display: flex;
         height: 72px;
         align-items: center;
-        padding-left: 80px;
+        padding-left: 70px;
         background-color: #468ff6;
         z-index: 101;
     }
@@ -453,7 +453,7 @@ ul.smallCardContainer {
     }
 
     nav ul.active {
-        gap: 34px;
+        gap: 30px;
         display: flex;
         align-items: center;
         text-align: left;
