@@ -614,12 +614,12 @@ ul.smallCardContainer {
     }
 
     nav ul.active {
-        gap: 6px;
+        gap: 34px;
         display: flex;
         align-items: center;
         text-align: left;
         list-style-type: none;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         z-index: 102;
     }
 
