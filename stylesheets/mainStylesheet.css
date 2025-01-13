@@ -445,6 +445,7 @@ ul.smallCardContainer {
         height: 72px;
         align-items: center;
         padding-left: 70px;
+        background-color: #488eee;
         z-index: 101;
     }
 
