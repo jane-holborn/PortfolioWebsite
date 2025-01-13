@@ -401,7 +401,24 @@ ul.smallCardContainer {
     height: 160px;
     overflow: hidden;
 }
+
 .coralBackground img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:auto;
+    height: 100%;
+}
+
+.coralBackground img.crab {
+    z-index: 10;
+    top: 30%;
+    left: 10%;
+    width: 100px;
+}
+
+.coralBackground img.seaweed {
+    z-index: 5;
     width: 100%;
     height: 100%;
     object-fit: cover;
