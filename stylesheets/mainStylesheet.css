@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat;
 }
 
 /* Navigation menu */
@@ -237,7 +237,7 @@ footer {
     display: grid;
     gap: 2rem 1.5rem;
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
+    max-width: 80vw;
     margin: 0;
 }
 
@@ -255,6 +255,7 @@ footer {
     background: rgba(36, 82, 150, 0.6);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(2px);
+    object-fit: cover;
 }
 
 .cardImage {
@@ -319,7 +320,7 @@ footer {
     display: grid;
     gap: 2rem 1.5rem;
     grid-template-columns: repeat(4, 1fr);
-    width: 100%;
+    max-width: 80vw;
     margin: 0;
 }
 
@@ -458,7 +459,7 @@ ul.smallCardContainer {
         justify-content: space-between;
         position: absolute;
         top: 2rem;
-        left: 2rem;
+        left: 1.4rem;
         width: 34px;
         height: 28px;
         cursor: pointer;
@@ -531,7 +532,7 @@ ul.smallCardContainer {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        width: 100%;
+        max-width: 74vw;
         height: 30%;
         margin: 0;
     }
@@ -546,7 +547,7 @@ ul.smallCardContainer {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        width: 100%;
+        max-width: 74vw;
         height: 30%;
         margin: 0;
     }
@@ -691,6 +692,7 @@ ul.smallCardContainer {
         display: grid;
         gap: 2rem 1rem;
         grid-template-columns: repeat(3, 1fr);
+        max-width: 74vw;
         margin: 0;
     }
 
@@ -727,7 +729,7 @@ ul.smallCardContainer {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        width: 100%;
+        max-width: 74vw;
         height: 30%;
         margin: 0;
     }
@@ -767,8 +769,17 @@ ul.smallCardContainer {
     }
 }
 
-/* Wide screen styling */
+/* Wide screen styling for desktops larger than 27" */
 
-@media (min-width: 1700px) {
+@media (min-width: 2560px) {
 
+    /* Resume styling */
+    .resumeGrid {
+        max-width: 58vw;
+    }
+
+    /* Portfolio styling */
+    .portfolioGrid {
+        max-width: 58vw;
+    }
 }
