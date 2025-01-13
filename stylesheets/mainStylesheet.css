@@ -437,7 +437,7 @@ ul.smallCardContainer {
         right: 0;
         position: fixed;
         display: flex;
-        height: 92px;
+        height: 72px;
         align-items: center;
         padding-left: 70px;
         z-index: 101;
@@ -462,7 +462,7 @@ ul.smallCardContainer {
         flex-direction: column;
         justify-content: space-between;
         position: absolute;
-        top: 2rem;
+        top: 1.4rem;
         left: 1.4rem;
         width: 34px;
         height: 28px;
