@@ -108,6 +108,10 @@ nav a:hover {
     background-color: white;
 }
 
+#home {
+    max-width: 80vw;
+}
+
 /* Link Styling */
 a {
     color: white;
@@ -183,7 +187,7 @@ section p.professionalSummaryStyling {
 
 section p.homePageIntroduction {
     margin: 0;
-    padding: 0 24px;
+    padding: 0;
     text-align: center;
     font-size: 1.3rem;
 }
@@ -490,6 +494,11 @@ ul.smallCardContainer {
         background-color: white;
     }
 
+    #home {
+        max-width: 74vw;
+        gap: 2rem;
+    }
+
     #home p br{
         display: none;
     }
@@ -509,7 +518,7 @@ ul.smallCardContainer {
     }
 
     section p.homePageIntroduction {
-        padding: 0 24px;
+        padding: 0;
         text-align: center;
         font-size: 1.3rem;
     }
@@ -646,6 +655,10 @@ ul.smallCardContainer {
         background-color: white;
     }
 
+    #home {
+        max-width: 80vw;
+    }
+
     #home p br {
         display: none;
     }
@@ -692,7 +705,7 @@ ul.smallCardContainer {
         display: grid;
         gap: 2rem 1rem;
         grid-template-columns: repeat(3, 1fr);
-        max-width: 74vw;
+        max-width: 80vw;
         margin: 0;
     }
 
@@ -729,7 +742,7 @@ ul.smallCardContainer {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        max-width: 74vw;
+        max-width: 80vw;
         height: 30%;
         margin: 0;
     }
@@ -780,6 +793,10 @@ ul.smallCardContainer {
 
     /* Portfolio styling */
     .portfolioGrid {
+        max-width: 58vw;
+    }
+
+    #home {
         max-width: 58vw;
     }
 }
