@@ -394,10 +394,17 @@ ul.smallCardContainer {
     text-align: left;
 }
 
-.coralBackground svg {
-    display: block;
-    width: 100%;
+/* Styling for footer area at bottom of webpage */
+.coralBackground {
+    position: relative;
+    width: 100vw;
+    height: 160px;
     overflow: hidden;
+}
+.coralBackground img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Mobile friendly set up */
