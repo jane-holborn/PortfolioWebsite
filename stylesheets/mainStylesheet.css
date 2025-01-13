@@ -56,7 +56,6 @@ nav a {
     color: white;
     border: none;
     outline: none;
-    padding: 10px;
     text-decoration: none;
 }
 
@@ -444,7 +443,7 @@ ul.smallCardContainer {
         display: flex;
         height: 72px;
         align-items: center;
-        padding-left: 70px;
+        padding-left: 80px;
         background-color: #468ff6;
         z-index: 101;
     }
@@ -454,7 +453,7 @@ ul.smallCardContainer {
     }
 
     nav ul.active {
-        gap: 6px;
+        gap: 34px;
         display: flex;
         align-items: center;
         text-align: left;
