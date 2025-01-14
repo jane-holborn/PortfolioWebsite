@@ -1,5 +1,5 @@
 # Portfolio Website
-This is my personal portfolio website, designed with a mobile-first approach to showcase my development skills, projects and coding journey. This site features a fun aquarium theme using CSS animations to give the page a playful, lighthearted interactive vibe. 🦀🐟
+This is my personal portfolio website, designed with a mobile-first approach to showcase my development skills, projects and coding journey. This site features a fun aquarium theme using CSS animations to give the page a playful, light-hearted interactive vibe. 🦀🐟
 ## Technologies Used
 - **HTML:** for structure and layout
 - **CSS:** for styling, animations, and responsive design
