@@ -20,6 +20,7 @@ Here are some exciting improvements and advanced features I aim to do as I conti
 - **GitHub API Integration:** Pull my public repositories directly from the GitHub API to dynamically display project details. This is an advanced feature that will help me to showcase my ability to interact with APIs and automate updates.
 - **Framework Migration:** Migrate my portfolio to a React Framework to gain hands-on experience with popular modern web frameworks, improving my front-end development skills.
 - **Project Pop-up with Side Scrolling:** Implement a pop-up feature for each project that displays project images, a link to the GitHub repository, and details about technology used. Add side-scrolling functionality to allow users to click left or right to navigate through multiple project photos. This will enhance user interaction and demonstrate advanced skills in UI/UX design and JavaScript.
+- **Automatic Copyright Year Update:** Implement a feature that automatically updates the copyright year in the footer using JavaScript, ensuring the year stays current without manual intervention.
 ## Visit the Live Portfolio
 You can view the live version of my portfolio website here:
 
